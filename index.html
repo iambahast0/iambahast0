@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+        }
+        footer {
+            background-color: #282828;
+            color: white;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>وێبسایتی بەهەست</h1>
+    </header>
+    <main>
+        <p> سڵاو بەخێربێی کلیک لە خوارەوە بکە</p>
+        <button onclick="sayHello()">Click Me!</button>
+        <p id="message"></p>
+    </main>
+    <footer>
+        <p>Created by [Bahast]</p>
+    </footer>
+
+    <script>
+        function sayHello() {
+            document.getElementById("message").textContent = "خۆشمەوێی!";
+        }
+    </script>
+</body>
+</html>
